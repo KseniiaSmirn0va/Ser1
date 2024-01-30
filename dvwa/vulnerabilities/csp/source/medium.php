@@ -7,7 +7,7 @@ header($headerCSP);
 // Disable XSS protections so that inline alert boxes will work
 header ("X-XSS-Protection: 0");
 # <script nonce="TmV2ZXIgZ29pbmcgdG8gZ2l2ZSB5b3UgdXA=">alert(1)</script>
-// <script nonce="TmV2ZXIgZ29pbmcgdG8gZ2l2ZSB5b3UgdXA=">alert(1)</script>
+// <blabla nonce="TmV2ZXIgZ29pbmcgdG8gZ2l2ZSB5b3UgdXA=">alert(1)</blabla>
 # nonce="TmV2ZXIgZ29pbmcgdG8gZ2l2ZSB5b3UgdXA="
 <script nonce="TmV2ZXIgZ29pbmcgdG8gZ2l2ZSB5b3UgdXA=">alert(1)</script>
 
